@@ -1,6 +1,7 @@
 import Heading from "../components/Heading";
+import Jobs from "../components/Jobs";
 
 const Home = () => {
-  return <Heading>Home</Heading>;
+  return <Jobs />;
 };
 export default Home;

@@ -21,8 +21,8 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${inter.className} bg-gray-900`}>
         <nav>
-          <NavLink text="Home" />
-          <NavLink url="about" text="About" />
+          <NavLink text="Jobs" />
+          <NavLink url="contact" text="Contact" />
         </nav>
         <div>{children}</div>
       </body>
