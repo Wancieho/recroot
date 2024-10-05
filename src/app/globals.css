@@ -6,6 +6,7 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  --text-rgb: 0, 0, 0;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -18,10 +19,10 @@
 
 body {
   color: rgb(var(--foreground-rgb));
+  
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+input {
+  color: rgb(var(--text-rgb));
 }
+
