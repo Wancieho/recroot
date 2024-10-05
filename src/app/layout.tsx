@@ -1,9 +1,8 @@
 import "./globals.css";
 
 import { Inter } from "next/font/google";
-import Link from "next/link";
 import type { Metadata } from "next";
-import NavLink from "../components/NavButton";
+import NavLink from "../components/atoms/NavButton";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,11 +19,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.className} bg-gray-900`}>
-        <nav>
-          <NavLink text="Home" />
-          <NavLink url="about" text="About" />
-        </nav>
-        <div>{children}</div>
+        <div className="container">
+          <nav>
+            <NavLink text="Jobs" />
+            <NavLink url="contact" text="Contact" />
+          </nav>
+          {children}
+        </div>
       </body>
     </html>
   );

@@ -1,6 +1,7 @@
-import Heading from "../components/Heading";
+import Heading from "../components/atoms/Heading";
+import Jobs from "@/components/organisms/Jobs/Jobs";
 
 const Home = () => {
-  return <Heading>Home</Heading>;
+  return <Jobs />;
 };
 export default Home;
