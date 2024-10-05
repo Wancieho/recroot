@@ -1,5 +1,4 @@
-import Heading from "../../components/Heading";
-import Jobs from "../../components/Jobs";
+import Heading from "@/components/atoms/Heading/Heading";
 
 const ContactPage: React.FC = () => {
   return (
